@@ -3,16 +3,18 @@
 <title>Cantor Truss</title>
 <meta charset="utf-8"/>
 <script src="jquery-3.2.1.min.js"></script>
+<style>
+    canvas { touch-action: none; }
+</style>
 <body>
     <div>
-        <font size="5">
-        <a href="#" id="zoomin">Zoom In</a>,
-        <a href="#" id="zoomout">Zoom Out</a>
+        <font size="8">
+            &nbsp;<a href="#" id="zoomin"><img src="zoomin.png" /></a>
+            &nbsp;<a href="#" id="zoomout"><img src="zoomout.png" /></a>
+            <canvas id="scale" width=768 height=24> </canvas>
+            <b id="text">10m</b>
         </font>
     </div>
     <canvas id="canvas" width=1024 height=768> </canvas>
-    <div>
-        <font size="6" id="text">10m</font><canvas id="scale" width=768 height=24> </canvas>
-</div>
-    <script src="cantor.min.js"></script>
+    <script src="cantor.js"></script>
 </body>
